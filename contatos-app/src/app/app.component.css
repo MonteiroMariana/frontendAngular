@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.home-card {
+  width: 300px;
+}

@@ -1,0 +1,58 @@
+<h2>{{ contatoId ? 'Editar Contato' : 'Novo Contato' }}</h2>
+
+<form [formGroup]="form" (ngSubmit)="salvar()" class="formulario">
+
+  <mat-form-field appearance="outline" class="campo">
+    <mat-label>Nome</mat-label>
+    <input matInput formControlName="nome" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="campo">
+    <mat-label>Apelido</mat-label>
+    <input matInput formControlName="apelido">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="campo">
+    <mat-label>Telefone</mat-label>
+    <input matInput formControlName="telefone" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="campo">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="campo">
+    <mat-label>Endereço</mat-label>
+    <input matInput formControlName="endereco">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="campo">
+    <mat-label>Data de Nascimento</mat-label>
+    <input matInput type="date" formControlName="dataNascimento">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="campo">
+    <mat-label>Categoria</mat-label>
+    <mat-select formControlName="categoria">
+      <mat-option *ngFor="let cat of categorias" [value]="cat">{{ cat }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="campo">
+    <mat-label>Rede Social</mat-label>
+    <input matInput formControlName="redeSocial">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="campo">
+    <mat-label>Observações</mat-label>
+    <textarea matInput formControlName="observacoes" rows="3"></textarea>
+  </mat-form-field>
+
+  <mat-checkbox formControlName="favorito">Marcar como favorito</mat-checkbox>
+
+  <div class="botoes">
+    <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Salvar</button>
+    <button mat-button color="warn" type="button" [routerLink]="['/contatos']">Cancelar</button>
+  </div>
+</form>

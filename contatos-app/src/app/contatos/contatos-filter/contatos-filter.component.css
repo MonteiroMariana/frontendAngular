@@ -1,0 +1,22 @@
+.filtros-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  border: 1px solid aliceblue;
+}
+
+.campo {
+  width: 100%;
+}
+
+.botoes-filtro {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: start;
+  grid-column: span 3; /* ocupa a linha inteira em telas maiores */
+}

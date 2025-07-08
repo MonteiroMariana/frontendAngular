@@ -1,0 +1,13 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.home-card {
+  width: 300px;
+  background-color: #fff; /* fundo branco */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra leve */
+  border-radius: 10px;
+}

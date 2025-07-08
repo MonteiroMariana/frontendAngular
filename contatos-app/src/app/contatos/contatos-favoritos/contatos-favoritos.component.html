@@ -1,0 +1,22 @@
+<h2> Contatos Favoritos</h2>
+
+<div class="cards-container">
+  <mat-card *ngFor="let contato of contatosFavoritos" class="home-card">
+    <mat-card-title>
+      {{ contato.nome }}
+      <mat-icon
+        (click)="removerFavorito(contato)"
+        color="warn"
+        style="cursor: pointer; margin-left: 8px;"
+      >
+        star
+      </mat-icon>
+    </mat-card-title>
+
+    <mat-card-content>
+      <p><strong>Telefone:</strong> {{ contato.telefone }}</p>
+      <p><strong>Email:</strong> {{ contato.email }}</p>
+      <p><strong>Categoria:</strong> {{ contato.categoria }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

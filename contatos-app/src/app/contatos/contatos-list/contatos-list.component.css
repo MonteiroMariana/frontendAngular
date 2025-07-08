@@ -1,0 +1,36 @@
+.lista-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contato-card {
+  background-color: #ffffff;
+  border-left: 6px solid #1976d2;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  padding: 16px;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.contato-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(1.01);
+}
+
+.contato-detalhes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.acoes {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}

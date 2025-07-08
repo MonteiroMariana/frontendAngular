@@ -1,0 +1,39 @@
+<h1> Gerenciador de Contatos</h1>
+
+<div class="cards-container">
+  <mat-card class="home-card">
+    <mat-card-title>
+      <mat-icon color="primary">contacts</mat-icon> Lista de Contatos
+    </mat-card-title>
+    <mat-card-content>
+      Visualize e gerencie todos os seus contatos.
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" routerLink="/contatos">Acessar</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="home-card">
+    <mat-card-title>
+      <mat-icon color="accent">add_circle</mat-icon> Novo Contato
+    </mat-card-title>
+    <mat-card-content>
+      Cadastre um novo contato no sistema.
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="accent" routerLink="/contatos/novo">Cadastrar</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="home-card">
+    <mat-card-title>
+      <mat-icon color="warn">star</mat-icon> Favoritos
+    </mat-card-title>
+    <mat-card-content>
+      Acesse rapidamente seus contatos favoritos.
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="warn" routerLink="/contatos/favoritos">Ver</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,21 @@
+<div class="filtros-container">
+  <mat-form-field appearance="outline" class="campo">
+    <mat-label>Nome</mat-label>
+    <input matInput [(ngModel)]="nome" placeholder="Digite um nome">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="campo">
+    <mat-label>Telefone</mat-label>
+    <input matInput [(ngModel)]="telefone" placeholder="Ex: (11) 99999-9999">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="campo">
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="email" placeholder="Ex: exemplo@email.com">
+  </mat-form-field>
+
+  <div class="botoes-filtro">
+    <button mat-raised-button color="primary" (click)="aplicarFiltro()">Filtrar</button>
+    <button mat-button color="warn" (click)="limpar()">Limpar</button>
+  </div>
+</div>
