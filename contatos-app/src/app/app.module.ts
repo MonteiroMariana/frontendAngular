@@ -19,7 +19,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 // Componentes (todos standalone)
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './contatos/home/home.component';
 
 import { ContatosFavoritosComponent } from './contatos/contatos-favoritos/contatos-favoritos.component';
 import { ContatosFilterComponent } from './contatos/contatos-filter/contatos-filter.component';
