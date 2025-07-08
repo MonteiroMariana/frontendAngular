@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { ContatosListComponent } from './contatos/contatos-list/contatos-list.component';
 import { ContatosFormComponent } from './contatos/contatos-form/contatos-form.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './contatos/home/home.component';
 import { ContatosFavoritosComponent } from './contatos/contatos-favoritos/contatos-favoritos.component';
 
 export const routes: Routes = [
