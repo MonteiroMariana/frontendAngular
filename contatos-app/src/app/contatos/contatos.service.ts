@@ -7,7 +7,7 @@ import { Contato } from './contato.model';
   providedIn: 'root'
 })
 export class ContatosService {
-  private api = 'http://localhost:8080/contatos';
+  private api = 'https://javacontato.duckdns.org/contatos';
 
   constructor(private http: HttpClient) {}
 
