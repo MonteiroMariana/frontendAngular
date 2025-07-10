@@ -7,27 +7,27 @@ import { Contato } from './contato.model';
   providedIn: 'root'
 })
 export class ContatosService {
-  private apiUrl: 'https://javacontato.duckdns.org'
+  private apiUrl: string = 'https://javacontato.duckdns.org/contatos';
 
   constructor(private http: HttpClient) {}
 
   listar(): Observable<Contato[]> {
-    return this.http.get<Contato[]>(this.api);
+    return this.http.get<Contato[]>(this.apiUrl);
   }
-  listarFavoritos(): Observable<Contato[]> {
-  return this.http.get<Contato[]>(`${this.api}/favoritos`);
-}
 
+  listarFavoritos(): Observable<Contato[]> {
+    return this.http.get<Contato[]>(`${this.apiUrl}/favoritos`);
+  }
 
   salvar(contato: Contato): Observable<Contato> {
-    return this.http.post<Contato>(this.api, contato);
+    return this.http.post<Contato>(this.apiUrl, contato);
   }
 
   atualizar(contato: Contato): Observable<Contato> {
-    return this.http.put<Contato>(`${this.api}/${contato.id}`, contato);
+    return this.http.put<Contato>(`${this.apiUrl}/${contato.id}`, contato);
   }
 
   deletar(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.api}/${id}`);
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
 }
