@@ -1,10 +1,10 @@
-package itu.fatec.contaos;
+package itu.fatec.contatos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ContaosApplicationTests {
+class ContatosApplicationTests {
 
 	@Test
 	void contextLoads() {
